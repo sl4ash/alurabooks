@@ -1,0 +1,85 @@
+.newsletter {
+  background-color: var(--branco);
+  margin: 1.5em;
+}
+
+.newsletter__titulo {
+  font-size: 18px;
+  font-weight: 500;
+  background: var(--cor-destaque-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.newsletter__texto {
+  font-size: 16px;
+  font-weight: 300;
+  background: var(--cor-destaque-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 1em 0 1em;
+}
+
+.newsletter__cadastro {
+  position: relative;
+  width: 380px;
+}
+
+.newsletter__cadastro__texto {
+  border: 1px solid var(--cor-destaque2);
+  border-radius: 24px;
+  width: 100%;
+  padding: 0.625em 0 0.625em 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background: var(--cor-destaque-degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-indent: 3.5em;
+}
+
+.newsletter__cadastro__texto::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background: var(--cor-destaque-degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input__icone {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding-left: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 2em;
+  }
+
+  .newsletter__descrição {
+    width: 30%;
+  }
+  .newsletter__titulo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .newsletter {
+    padding: 0.5em 5vw;
+  }
+}
